@@ -35,7 +35,27 @@ if (tipoSolicitante==1 || historialCrediticio==4)
 
 if (salarioMensual>=0 && antiguedadLaboral>=0 && montoSolicitado>=0 && historialCrediticio>=1 && historialCrediticio<=4)
 {
+    switch(tipoSolicitante)
+    {
+        case 1:
+            
+            break;
 
+        case 2:
+            
+            break;
+
+        case 3:
+            
+            break;
+
+        case 4:
+            
+            break;
+
+        default:
+            break;
+    }
 }
 else
 {
