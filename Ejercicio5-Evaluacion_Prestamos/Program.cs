@@ -38,7 +38,77 @@ if (salarioMensual>=0 && antiguedadLaboral>=0 && montoSolicitado>=0 && historial
     switch(tipoSolicitante)
     {
         case 1:
-            
+            if (historialCrediticio==1)
+            {
+                if (salarioMensual>=1000 && antiguedadLaboral>=6)
+                {
+                    Console.WriteLine("Situación: Aprobado");
+                    Console.WriteLine("Motivo principal: Condiciones cumplidas");
+                }
+                else if (salarioMensual>=1500 || antiguedadLaboral>=8)
+                {
+                    Console.WriteLine("Situación: Aprobado con condición");
+                    Console.WriteLine("Motivo principal: Se cumplió al menos una condición.");
+                }
+                else
+                {
+                    Console.WriteLine("Situación: Rechazado");
+                    Console.WriteLine("Motivo principal: No se cumplió ninguna de las condiciones.");
+                }
+            }
+            else if (historialCrediticio == 2)
+            {
+                if (salarioMensual >= 2000 && antiguedadLaboral >= 10)
+                {
+                    Console.WriteLine("Situación: Aprobado");
+                    Console.WriteLine("Motivo principal: Condiciones cumplidas");
+                }
+                else if (salarioMensual >= 2500 || antiguedadLaboral >= 12)
+                {
+                    Console.WriteLine("Situación: Aprobado con condición");
+                    Console.WriteLine("Motivo principal: Se cumplió al menos una condición.");
+                }
+                else
+                {
+                    Console.WriteLine("Situación: Rechazado");
+                    Console.WriteLine("Motivo principal: No se cumplió ninguna de las condiciones.");
+                }
+            }
+            else if (historialCrediticio == 3)
+            {
+                if (salarioMensual >= 4000 && antiguedadLaboral >= 16)
+                {
+                    Console.WriteLine("Situación: Aprobado");
+                    Console.WriteLine("Motivo principal: Condiciones cumplidas");
+                }
+                else if (salarioMensual >= 4500 || antiguedadLaboral >= 18)
+                {
+                    Console.WriteLine("Situación: Aprobado con condición");
+                    Console.WriteLine("Motivo principal: Se cumplió al menos una condición.");
+                }
+                else
+                {
+                    Console.WriteLine("Situación: Rechazado");
+                    Console.WriteLine("Motivo principal: No se cumplió ninguna de las condiciones.");
+                }
+            }
+            else if (historialCrediticio == 4)
+            {
+                if (tieneFiador && montoSolicitado<1000)
+                {
+                    Console.WriteLine("Situación: Aprobado con condición");
+                    Console.WriteLine("Motivo principal: Cumple con lo mínimo.");
+                }
+                else
+                {
+                    Console.WriteLine("Situación: Rechazado");
+                    Console.WriteLine("Motivo principal: No cumple con lo mínimo.");
+                }
+            }
+            else
+            {
+                Console.WriteLine("Error");
+            }
             break;
 
         case 2:
