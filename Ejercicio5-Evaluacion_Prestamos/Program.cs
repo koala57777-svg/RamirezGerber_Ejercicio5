@@ -28,9 +28,23 @@ Console.WriteLine("");
 int historialCrediticio = int.Parse(Console.ReadLine());
 Console.WriteLine("");
 bool tieneFiador= false;
-if (tipoSolicitante==1 || historialCrediticio==4)
+if (tipoSolicitante==4 || historialCrediticio==4)
 {
-    tieneFiador = true;
+    Console.WriteLine("¿Tiene fiador? (S/N): ");
+    string respuestaFiador = Console.ReadLine();
+    if (respuestaFiador=="S")
+    {
+        tieneFiador = true;
+    }
+    else if (respuestaFiador =="N")
+    {
+        
+    }
+    else
+    {
+        Console.WriteLine("Respuesta inválida");
+    }
+    
 }
 
 if (salarioMensual>=0 && antiguedadLaboral>=0 && montoSolicitado>=0 && historialCrediticio>=1 && historialCrediticio<=4)
