@@ -32,3 +32,12 @@ if (tipoSolicitante==1 || historialCrediticio==4)
 {
     tieneFiador = true;
 }
+
+if (salarioMensual>=0 && antiguedadLaboral>=0 && montoSolicitado>=0 && historialCrediticio>=1 && historialCrediticio<=4)
+{
+
+}
+else
+{
+    Console.WriteLine("Datos inválidos. Por favor ingresar datos válidos.");
+}
